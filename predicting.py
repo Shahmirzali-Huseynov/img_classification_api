@@ -5,7 +5,7 @@ import io
 from PIL import Image
 
 
-Categories =  ['bike','car','cup','ice cream cone','pretty sunflower']
+Categories =  ['bike','cup','icecream cone','pretty sunflower']
 
 def predictFuntion(image_url):
     # test_model = pickle.load(open("Classification_Model.p","rb"))
