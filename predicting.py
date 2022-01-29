@@ -11,7 +11,6 @@ def predictFuntion(image_url):
     # test_model = pickle.load(open("Classification_Model.p","rb"))
     test_model = joblib.load("model_joblib")
 
-
     flat_data = []
     
     image_bytes = image_url.file.read()
@@ -22,5 +21,5 @@ def predictFuntion(image_url):
     flat_data = np.array(flat_data) 
     y_output = test_model.predict(flat_data)
     y_output = Categories[y_output[0]] 
-    
+
     return y_output
